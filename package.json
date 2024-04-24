@@ -7,6 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "start:sass": "sass --watch --no-source-map src/app/sass/styles.scss src/app/css/styles.css",
+    "build:sass": "sass --style=compressed --no-source-map src/app/styles.scss dist/projetosass/css/styles.css",
     "serve:ssr:projeto-inicial": "node dist/projeto-inicial/server/server.mjs"
   },
   "private": true,
@@ -39,6 +41,8 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "live-server": "^1.2.2",
+    "sass": "^1.75.0",
     "typescript": "~5.4.2"
   }
 }
